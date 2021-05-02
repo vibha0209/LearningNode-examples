@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Comment Index</title>
+</head>
+
+<body>
+<h1>Edit:</h1>
+
+
+    <form method="POST" action="/comments/<%= comment.id %>/?_method=PATCH">
+<textarea name="comment" id="" cols="30" rows="10">
+    <%= comment.comment  %> 
+</textarea>
+<button>Save</button>
+</form>
+
+
+<a href="/comments">back to comment</a>
+</body>
+
+</html>
