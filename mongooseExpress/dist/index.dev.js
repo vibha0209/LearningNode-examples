@@ -6,9 +6,11 @@ var app = express();
 
 var path = require('path');
 
+var Product = require('./models/product');
+
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/shopApp', {
+mongoose.connect('mongodb://localhost:27017/farmStand', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(function () {
